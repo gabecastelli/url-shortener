@@ -1,0 +1,61 @@
+@import "normalize.css";
+
+@font-face {
+    font-family: 'Agane';
+    src: url('/assets/fonts/agane/Aganè 55 (roman).woff') format('woff');
+}
+
+$color-primary: #F7BC00;
+$color-secondary: #A9267F;
+$color-text: #ffffff;
+
+$font: 'Agane', sans-serif;
+$font-size: 18px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $color-text;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+    color: $color-text;
+    font-family: $font;
+    font-size: $font-size;
+}
+
+body {
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    height: 100%;
+    padding: 0 75px;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo__container a {
+    height: 100%;
+}
+
+#logo {
+    width: 200px;
+}
+
+.nav__links {
+    margin-left: 40px;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
