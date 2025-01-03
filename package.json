@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -c-1 -p 8081 & sass --watch scss/style.scss styles/style.css"
+    "start": "node index",
+    "dev": "nodemon index & sass --watch scss/style.scss public/styles/style.css"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "config": "^3.3.12",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "http-server": "^14.1.1",
     "mongodb": "^6.12.0",
@@ -20,5 +21,8 @@
     "sass": "^1.83.0",
     "shortid": "^2.2.16",
     "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
