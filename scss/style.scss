@@ -72,7 +72,7 @@ h5 {
     font-size: 1.44rem;
 }
 
-img {
+.logo--header, .logo--footer {
     pointer-events: none;
 }
 
@@ -171,6 +171,7 @@ h1 {
 .copy {
     display: inline;
     height: 1rem;
+    cursor: pointer;
 }
 
 .error {
